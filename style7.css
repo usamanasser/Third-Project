@@ -1,0 +1,207 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.container
+{
+	width:100%;
+	position:relative;
+}
+.nav {
+	width:100%;
+	height:20vh;
+	text-transform:uppercase;
+}
+.nav h1{
+	text-align:center;
+	margin:2% 0%;
+	font-size:45px;
+}
+.nav ul
+{
+	width:60%;
+	position:relative;
+left:20%;
+top:25%;
+	
+}
+.nav ul li
+{
+	float:left;
+	margin-left:7%;
+	font-size:22px;
+}
+.nav ul li a{
+	text-decoration:none;
+	color:none;
+}
+.clear
+{
+	clear:both;
+}
+.nav ul li:hover
+{
+	transform: scale(1.5);
+	transition-duration:2s;
+}
+.foodimg{
+	width:50%;
+	height:60vh;
+	margin-top:10vh;
+	background-image:url("fastfood.jpg");
+	background-size:100% 100%;
+	border:none;
+	animation-name:food-img-ani;
+	animation-duration:3s;
+	animation-fill-mode:forwards;
+	position:relative;
+	transition-property:all;
+}
+@keyframes food-img-ani
+{
+	from{left:-600px;}
+	to{left:0px;}
+}
+.foodimg:hover{
+	transform:scale(.9);
+	transition-duration:3s;
+}
+.food-order
+{
+	width:50%;
+	height:60vh;
+	position:absolute;
+	top:34vh;
+	right:0;
+	text-align:center;
+	animation-name:food-order-ani;
+	animation-duration:3s;
+	animation-fill-mode:forwards;
+	animation-delay:2s;
+	transition-property:all;
+opacity:0;
+}
+@keyframes food-order-ani
+{
+	from{right:-600px;}
+	to{right:0px;opacity: 1;}
+}
+.food-order h1{
+	text-transform:uppercase;
+	font-size:50px;
+	margin:0% auto;
+	position:relative;
+	animation-name:order-h1;
+	animation-duration:3s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes order-h1
+{
+	from{left:-600px;}
+	to{left:0px;opacity:1;}
+}
+.food-order p{
+	font-family:Arial, helvetica, sans-serif;
+	position:relative;
+	width:70%;
+	font-size:18px;
+	color:#323232;
+	margin:5% auto;
+	animation-name:order-p;
+	animation-duration:2s;
+	animation-delay:4s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+@keyframes order-p
+{
+	from{right:-600px;}
+	to{right:0px;opacity:1;}
+}
+.food-order button
+{
+position:relative;
+width:20%;
+height:10%;
+border:none;
+outline-style:none;
+text-transform:uppercase;
+font-size:20px;
+background-image:linear-gradient(to left, teal ,transparent);
+animation-name:order-btn;
+animation-duration:2s;
+animation-delay:5s;
+animation-fill-mode:forwards;
+opacity:0;
+border-radius:20px;
+
+}
+@keyframes order-btn
+{
+	from{right:-600px;}
+	to{right:0px;opacity:1;}
+}
+.chefs{
+	height:80vh;
+	width:100%;
+	padding:1px;
+}
+.chefs h1{
+	color:grey;
+	text-align:center;
+	margin-top:10px;
+	text-transform:uppercase;
+	font-size:50px;
+	margin:0% auto;
+	position:relative;
+	animation-name:order-hh1;
+	animation-duration:3s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+	
+}
+@keyframes order-hh1
+{
+	from{top:-600px;}
+	to{top:0px;opacity:1;}
+}
+.chef1
+{
+	height:70vh;
+	width:20%;
+	margin-left:3%;
+	float:left;
+	margin-top:50px;
+}
+.chef1:hover{
+	transform:scale(.9);
+	transition-duration:3s;
+}
+.i1 img{
+	height:50vh;
+	width:100%;
+}
+.chef1 h2{
+	text-align:center;
+	font-size:30px;
+	margin-top:10px;
+	color:grey;
+	text-transform:uppercase;
+	position:relative;
+	animation-name:order-hh1;
+	animation-duration:3s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+
+.chef1 p{
+	text-align:center;
+	color:grey;
+	margin-top:20px;
+}
+
